@@ -7,17 +7,24 @@
         })
 
         let mainContent = document.getElementsByTagName("main")[0]
-        
+        mainContent.setAttribute("class", "container")
+        documentBody = document.body
 
         let mainParagraph = document.createElement("p")
         mainParagraph.setAttribute("id", "MainParagraph")
-        mainParagraph.setAttribute("class", "mt-3")
+        mainParagraph.setAttribute("class", "mt-3 container")
 
-        let firstString = "This is a main paragraph that we added through javascript"
+        let firstString = "This is a "
+        let secondString = `${ firstString } main paragraph that we added through javascript`
+        mainParagraph.textContent = secondString
 
-        mainParagraph.textContent = firstString
+        mainContent.append(mainParagraph)
 
-        mainContent.appendChild(mainParagraph)
+        // documentBody.innerHTML = `
+        // <div class ="container">
+        //      <h1 class="display-1">Hello WEBD6201</h1>
+        //      <p class="mt-5 lead">and... what do you think of this method?</p>
+        //      </div>`
     }
 
     function Start() {
