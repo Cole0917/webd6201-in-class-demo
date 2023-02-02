@@ -15,10 +15,11 @@
         mainParagraph.setAttribute("class", "mt-3 container")
 
         let firstString = "This is a "
-        let secondString = `${ firstString } main paragraph that we added through javascript`
+        let secondString = `${ firstString } main paragraph that we added through javascript and this is also on GitHub Pages`
         mainParagraph.textContent = secondString
 
-        mainContent.append(mainParagraph)
+        // add after(append)
+        mainContent.appendChild(mainParagraph)
 
         // documentBody.innerHTML = `
         // <div class ="container">
