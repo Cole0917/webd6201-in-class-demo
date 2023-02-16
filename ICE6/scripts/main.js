@@ -18,7 +18,7 @@
     }
 
     function AddContact(fullName, contactNumber, emailAddress) {
-        let contact = new Contact(fullName, contactNumber, emailAddress)
+        let contact = new core.Contact(fullName, contactNumber, emailAddress)
         if (contact.serialize()) {
             let key = contact.Name.substring(0, 1) + Date.now()
             localStorage.setItem(key, contact.serialize())
@@ -56,7 +56,7 @@
             // for every key in the keys collection
             for (const key of keys) {
                 let contactData = localStorage.getItem(key) // Get localStorage data value related to the key
-                let contact = new Contact()
+                let contact = new core.Contact()
                 
                 contact.deserialize(contactData)
 
@@ -117,7 +117,7 @@
             default:
                 {
                     // get contact info from localStorage
-                    let contact = new Contact()
+                    let contact = new core.Contact()
                     contact.deserialize(localStorage.getItem(page))
 
                     // display contact info in edit form
