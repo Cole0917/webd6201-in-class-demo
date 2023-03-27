@@ -1,12 +1,12 @@
 "use strict";
-((function () {
-    let protected_routes = [
-        "contact-list"
+(function () {
+    let protectedRoutes = [
+        'contact-list'
     ];
-    if (protected_routes.indexOf(router.ActiveLink) > -1) {
+    if (protectedRoutes.indexOf(router.ActiveLink) > -1) {
         if (!sessionStorage.getItem("user")) {
-            location.href = "/login";
+            location.href = '/login';
         }
     }
-}))();
+})();
 //# sourceMappingURL=authguard.js.map
