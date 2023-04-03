@@ -21,7 +21,6 @@
   "homepage": "https://github.com/Cole0917/webd6201-in-class-demo#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
-    "@types/node": "^18.15.11",
     "bootstrap": "^5.2.3",
     "is-odd": "^3.0.1",
     "jquery": "^3.6.3",
@@ -29,6 +28,7 @@
   },
   "devDependencies": {
     "@types/mime-types": "^2.1.1",
+    "@types/node": "^18.15.11",
     "nodemon": "^2.0.22"
   }
 }
