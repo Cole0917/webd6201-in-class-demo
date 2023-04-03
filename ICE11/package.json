@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Week 2 class demo",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite-server": "lite-server",
+    "nodemon": "nodemon -e js server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +21,14 @@
   "homepage": "https://github.com/Cole0917/webd6201-in-class-demo#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
+    "@types/node": "^18.15.11",
     "bootstrap": "^5.2.3",
     "is-odd": "^3.0.1",
     "jquery": "^3.6.3",
     "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/mime-types": "^2.1.1",
+    "nodemon": "^2.0.22"
   }
 }
